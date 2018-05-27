@@ -1,28 +1,26 @@
 # scraping the worldsurfleague.com website to gather data
 import requests
 import bs4
-import json
 from heat_struct import Heat, Surfer
+from round_struct import Round
 
-def data_from_page(url) :
-    html = get_html_from_web(url)
-    data = get_heat_info(html)
-    # create heat object
-    # store object into JSON file
-    return data
-
-# get html info from web
-def get_html_from_web(url) :
-    html = requests.get(url)
-    # print(html.text)
-    return html.text
-
+# takes an html pages, parses the info about the round, gives back a Round object
 def get_round_info(html) :
     soup = bs4.BeautifulSoup(html, 'html.parser')
     soup_heats = soup.find_all('div', {'class' : 'new-heat'})
 
+    list_heats = []
+    for soup_heat in soup_heats :
+        list_heats.append(get_heat_info(soup_heat))
 
-#get info about one head
+    round = list_heats[0].round
+
+    current_round = Round(round, list_heats)
+
+    return current_round
+
+
+# takes an html div soup, parses info about a Heat, gives back a filled Heat object
 def get_heat_info(html) :
 
     round = soup.find(class_='is-selected').find('strong').get_text()
@@ -31,24 +29,21 @@ def get_heat_info(html) :
     soup_surfers = soup.find_all("div",{"class":"new-heat-athlete-content-wrap"})
     soup_waves = soup.find_all("div", {"class" : "all-waves"})
 
-    surfers = []
+    list_surfers = []
     for soup_surfer, soup_wave in zip(soup_surfers, soup_waves) :
             surfer = get_surfer_info(soup_surfer, soup_wave)
-            surfers.append(surfer)
+            list_surfers.append(surfer)
 
-    print('round : ' + round)
-    print('heat : ' + heat)
+    current_heat = Heat(round, heat, list_surfers)
 
-    for s in surfers :
-        print(s)
+    return current_heat
 
-    return round
 
-#get the info about one surfer
+# takes an html div soup, parses info about a surfer's performance, gives back a filled Surfer namedtuple
 def get_surfer_info(soup_surfer, soup_wave) :
 
     name = soup_surfer.find(class_ = 'avatar-text-primary').get_text()
-    waves = []
+    list_waves = []
 
     waves_soup_temp = soup_wave.find_all('span', {'class' : 'wave'})
     for w in waves_soup_temp :
@@ -56,15 +51,25 @@ def get_surfer_info(soup_surfer, soup_wave) :
             score = float(w.find(class_ = 'score').get_text())
         except Exception :
             score = None
-        waves.append(score)
+        list_waves.append(score)
 
     surfer = Surfer(name = name, waves = waves)
+
     return surfer
 
 
-def main() :
-    data = data_from_page('http://www.worldsurfleague.com/events/2008/mct/4/quiksilver-pro-gold-coast?roundId=71')
+# get html info from web
+def get_html_from_web(url) :
+    html = requests.get(url)
+    return html.text
+
+
+def main(url) :
+    html = get_html_from_web(url)
+    data = data_from_page(html)
+
+    return data
 
 
 if __name__ == '__main__' :
-    main()
+    main('http://www.worldsurfleague.com/events/2008/mct/4/quiksilver-pro-gold-coast?roundId=71')
