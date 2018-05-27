@@ -3,6 +3,7 @@ import requests
 import bs4
 from heat_struct import Heat, Surfer
 from round_struct import Round
+from comp_struct import Competition
 
 # takes an html pages, parses the info about the round, gives back a Round object
 def get_round_info(html) :
@@ -47,18 +48,18 @@ def get_surfer_info(soup) :
     list_waves = []
     # print(soup_surfer)
     waves_soup_temp = soup_wave.find_all('span', {'class' : 'wave'})
-    
+
     for w in waves_soup_temp :
         try :
             score = float(w.find(class_ = 'score').get_text())
         except Exception :
-            score = None
+            continue
         list_waves.append(score)
 
-    wave1 = max(list_waves)
-    list_copy = list_waves.remove(wave1)
-    wave2 = max(list_copy)
-    total = wave1 + wave2
+    # wave1 = max(list_waves)
+    # list_copy = list_waves.remove(wave1)
+    # wave2 = max(list_copy)
+    total = 5# wave1 + wave2
 
     surfer = Surfer(name = name, waves = list_waves, total=total)
 
@@ -78,13 +79,36 @@ def match_class(target):
     return do_match
 
 
-def main(url) :
-    html = get_html_from_web(url)
-    data = get_round_info(html)
-    print(data)
+def get_url_list(html) :
+    soup = bs4.BeautifulSoup(html, 'lxml')
+
+    url_base = 'http://www.worldsurfleague.com'
+    list_url = soup.find(class_ = 'flickity-slider').find_all('li', 'data-item-href')
+
+    final_list = []
+    for l in list_url :
+        final_list.append(url_base + l)
+
+    return final_list
+
+
+def get_competition_info(base_url) :
+    # find list of urls with base url
+    # Get a round object for each url and add it to a competition object
+
+    html = get_html_from_web(base_url)
+    urls = get_url_list(html)
+
+
+
+    comp = Competition(name = )
 
     return data
 
 
+def main(base_url) :
+    get_competition_info(base_url)
+
+
 if __name__ == '__main__' :
-    main('http://www.worldsurfleague.com/events/2008/mct/4/quiksilver-pro-gold-coast?roundId=42')
+    main('http://www.worldsurfleague.com/events/2008/mct/4/quiksilver-pro-gold-coast')
