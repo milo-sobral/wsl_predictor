@@ -14,3 +14,11 @@ class Round :
             str += heat.__repr__()
 
         return str
+
+
+    def get_best_heat_total() :
+        max = self.heats[0]
+        for h in self.heats :
+            if h.get_heat_winner().total > max.get_heat_winner().total :
+                max = h
+        return max

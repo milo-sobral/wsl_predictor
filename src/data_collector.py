@@ -47,6 +47,7 @@ def get_surfer_info(soup) :
     list_waves = []
     # print(soup_surfer)
     waves_soup_temp = soup_wave.find_all('span', {'class' : 'wave'})
+    
     for w in waves_soup_temp :
         try :
             score = float(w.find(class_ = 'score').get_text())
@@ -54,7 +55,12 @@ def get_surfer_info(soup) :
             score = None
         list_waves.append(score)
 
-    surfer = Surfer(name = name, waves = list_waves)
+    wave1 = max(list_waves)
+    list_copy = list_waves.remove(wave1)
+    wave2 = max(list_copy)
+    total = wave1 + wave2
+
+    surfer = Surfer(name = name, waves = list_waves, total=total)
 
     return surfer
 
