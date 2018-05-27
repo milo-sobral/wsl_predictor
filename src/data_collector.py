@@ -20,7 +20,7 @@ def get_html_from_web(url) :
 def get_round_info(html) :
     soup = bs4.BeautifulSoup(html, 'html.parser')
     soup_heats = soup.find_all('div', {'class' : 'new-heat'})
-    
+
 
 #get info about one head
 def get_heat_info(html) :
