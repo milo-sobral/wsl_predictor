@@ -6,7 +6,7 @@ from round_struct import Round
 
 # takes an html pages, parses the info about the round, gives back a Round object
 def get_round_info(html) :
-    soup = bs4.BeautifulSoup(html, 'html.parser')
+    soup = bs4.BeautifulSoup(html, 'lxml')
     soup_heats = soup.find_all('div', class_ = 'new-heat')
 
     round = soup.find(class_='carousel').find(match_class(['carousel-item', 'is-selected'])).find('strong').get_text()
@@ -74,12 +74,12 @@ def get_surfer_info(soup) :
     # print(soup)
 
     soup_surfer = soup.find("div",{"class":"new-heat-athlete-content-wrap"})
-    # soup_wave = soup.find(class_ = ''))
+    soup_wave = soup.find('div', {'class' : 'all-waves'})
 
     name = soup_surfer.find(class_ = 'avatar-text-primary').get_text()
     list_waves = []
     # print(soup_surfer)
-    waves_soup_temp = soup_surfer.find_all('span', {'class' : 'wave'})
+    waves_soup_temp = soup_wave.find_all('span', {'class' : 'wave'})
     for w in waves_soup_temp :
         try :
             score = float(w.find(class_ = 'score').get_text())
