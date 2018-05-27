@@ -12,7 +12,9 @@ class Heat :
 
 
     def __repr__(self) :
-        print('-------------')
-        print('Heat {} of {} : '.format(self.heat, self.round))
+        str = '-------------\n'
+        str += 'Heat {} of {} : \n'.format(self.heat, self.round)
         for s in self.surfers :
-            print('Name : {}\nWaves : \n\t{}\t'.format(s.name, s.waves))
+            str += 'Name : {}\nWaves : \n\t{}\t\t'.format(s.name, s.waves)
+
+        return str
