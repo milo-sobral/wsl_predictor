@@ -37,5 +37,13 @@ class Heat :
         return max
 
 
+    # transform a heat object into a dictionary
     def to_json(self) :
-        pass
+
+        dict_heat = {
+            'round' : self.round,
+            'heat' : self.round,
+            'surfers' : self.surfers._asdict()
+        }
+
+        return dict_heat

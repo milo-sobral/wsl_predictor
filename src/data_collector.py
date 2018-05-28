@@ -18,8 +18,6 @@ def get_competition_info(base_url) :
     html = get_html_from_web(base_url)
     urls = get_url_list(html)
 
-    print(urls)
-
     rounds = []
     for url in urls :
         print('Retrieving info...')
@@ -29,9 +27,29 @@ def get_competition_info(base_url) :
         print('round {} done'.format(round_temp.round))
         time.sleep(5)
 
-    # comp = Competition(name = )
+    name, date, location = get_comp_basic_info(html)
+    comp = Competition(name = name, date = date, location = location, rounds = rounds)
 
-    # return comp
+    return comp
+
+
+# Get basic info about a competition
+def get_comp_basic_info(html) :
+    soup = bs4.BeautifulSoup(html, 'lxml')
+    name = soup.find(class_ = 'event-title').h1.get_text()
+    date = soup.find(class_ = 'event-schedule-primary').get_text()
+    location = soup.find(class_ = 'event-meta').get_text()
+    return name, date, parse_location(location)
+
+
+# parsing useful info out of the raw location division
+def parse_location(raw) :
+    words = raw.split(' ')
+    words = words[4:]
+    str = ''
+    for word in words :
+        str += word + ' '
+    return str
 
 
 # takes an html pages, parses the info about the round, gives back a Round object
@@ -85,6 +103,7 @@ def get_surfer_info(soup) :
             continue
         list_waves.append(score)
 
+# TODO : CALCULATE HEAT TOTAL 
     # wave1 = max(list_waves)
     # list_copy = list_waves.remove(wave1)
     # wave2 = max(list_copy)
@@ -101,6 +120,7 @@ def get_html_from_web(url) :
     return html.text
 
 
+#  Helpe method to parse soup objects
 def match_class(target):
     def do_match(tag):
         classes = tag.get('class', [])
@@ -108,12 +128,12 @@ def match_class(target):
     return do_match
 
 
+#  Returns a list of all urls nedded to visit one competition
 def get_url_list(html) :
     soup = bs4.BeautifulSoup(html, 'lxml')
 
     url_base = 'http://www.worldsurfleague.com'
     list_url = soup.find('div', {'class' : 'carousel'}).find_all('li')
-    # print(list_url)
 
     final_list = []
     for l in list_url :
@@ -123,7 +143,7 @@ def get_url_list(html) :
 
 
 def main(base_url) :
-    get_competition_info(base_url)
+    print(get_competition_info(base_url))
 
 
 if __name__ == '__main__' :
