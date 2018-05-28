@@ -27,3 +27,6 @@ class Round :
             if h.get_heat_winner().total > max.get_heat_winner().total :
                 max = h
         return max
+
+
+    def 
