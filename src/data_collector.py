@@ -1,8 +1,11 @@
 # scraping the worldsurfleague.com website to gather data
 import requests
 import bs4
+import sys
+import os
+import time
 
-path_to_structs = os.path.join(os.path.dirname(os.path.abspath(__file__), 'structs')
+path_to_structs = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'structs')
 sys.path.insert(0, path_to_structs)
 
 from heat_struct import Heat, Surfer
@@ -17,14 +20,17 @@ def get_competition_info(base_url) :
 
     print(urls)
 
-    # rounds = []
-    # for url in urls :
-    #     rounds.append(get_round_info(url))
-    #
-    #
-    #
+    rounds = []
+    for url in urls :
+        print('Retrieving info...')
+        html = get_html_from_web(url)
+        round_temp = get_round_info(html)
+        rounds.append(round_temp)
+        print('round {} done'.format(round_temp.round))
+        time.sleep(5)
+
     # comp = Competition(name = )
-    #
+
     # return comp
 
 
@@ -106,11 +112,12 @@ def get_url_list(html) :
     soup = bs4.BeautifulSoup(html, 'lxml')
 
     url_base = 'http://www.worldsurfleague.com'
-    list_url = soup.find(class_ = 'flickity-slider').find_all('li', 'data-item-href')
+    list_url = soup.find('div', {'class' : 'carousel'}).find_all('li')
+    # print(list_url)
 
     final_list = []
     for l in list_url :
-        final_list.append(url_base + l)
+        final_list.append(url_base + l['data-item-href'])
 
     return final_list
 
