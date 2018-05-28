@@ -166,9 +166,17 @@ def get_url_list(html) :
 
 
 #  Get the path where a json file for one competition will be saved
-def get_json_path(comp) :
+def get_json_path(comp, path) :
     current_path = os.path.dirname(os.path.abspath(__file__))
-    json_files = os.path.join(os.path.split(current_path)[0],'bin', 'json_data')
+
+    if not path :
+        temp = os.path.join(os.path.split(os.path.split(current_path)[0])[0],'wsl_predictor_bin')
+        if not os.path.isdir(temp) :
+            os.mkdir(temp)
+        json_files = os.path.join(os.path.split(os.path.split(current_path)[0])[0],'wsl_predictor_bin', 'json_data')
+    else :
+        path = os.path.abspath(path)
+        json_files = os.path.join(path, 'json_data')
 
     if not os.path.isdir(json_files) :
         os.mkdir(json_files)
@@ -179,14 +187,13 @@ def get_json_path(comp) :
     sub_year = os.path.join(json_files, comp_year)
     if not os.path.isdir(sub_year) :
         os.mkdir(sub_year)
-
     final_sub_path = os.path.join(sub_year, comp_name + '.json')
     return final_sub_path
 
 
 #  Write a comp object to a json file
-def write_to_json(comp) :
-    json_path = get_json_path(comp)
+def write_to_json(comp, path) :
+    json_path = get_json_path(comp, path)
     with open(json_path, 'w') as fout :
         print('\ndumping to JSON file at {}'.format(json_path))
         json.dump(comp.to_json(), fout, indent = 2)
@@ -199,4 +206,5 @@ def main(base_url) :
 
 
 if __name__ == '__main__' :
-    main('http://www.worldsurfleague.com/events/2008/mct/4/quiksilver-pro-gold-coast')
+    url = input('url : ')
+    main(url)
