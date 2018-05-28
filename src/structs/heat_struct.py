@@ -39,7 +39,6 @@ class Heat :
 
     # transform a heat object into a dictionary
     def to_json(self) :
-
         temp_surfers = []
         for surfer in self.surfers :
             dict_surfer = {

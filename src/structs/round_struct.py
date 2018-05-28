@@ -28,6 +28,7 @@ class Round :
                 max = h
         return max
 
+
     # transforms into dictionaries
     def to_json(self) :
 
@@ -40,5 +41,5 @@ class Round :
             'round' : self.round,
             'heats' : jsonized_heats
         }
-        
+
         return dict_round
