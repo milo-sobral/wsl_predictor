@@ -36,5 +36,4 @@ class Competition :
             'rounds' : jsonized_rounds
         }
 
-        json_comp = json.dumps(dict_comp)
-        return json_comp
+        return dict_comp

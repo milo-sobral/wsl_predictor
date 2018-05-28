@@ -4,6 +4,7 @@ import bs4
 import sys
 import os
 import time
+import json
 
 path_to_structs = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'structs')
 sys.path.insert(0, path_to_structs)
@@ -103,7 +104,7 @@ def get_surfer_info(soup) :
             continue
         list_waves.append(score)
 
-# TODO : CALCULATE HEAT TOTAL 
+# TODO : CALCULATE HEAT TOTAL
     # wave1 = max(list_waves)
     # list_copy = list_waves.remove(wave1)
     # wave2 = max(list_copy)
@@ -142,8 +143,30 @@ def get_url_list(html) :
     return final_list
 
 
+#  Get the path where a json file for one competition will be saved
+def get_json_path(comp) :
+    current_path = os.path.dirname(os.path.abspath(__file__))
+    json_files = os.path.join(os.path.split(current_path)[0],'bin', 'json_data')
+
+    if not os.path.isdir(json_files) :
+        os.mkdir(json_files)
+
+    comp_year = comp.date.split()[-1]
+    comp_name = comp.name.replace(' ', '_')
+
+    sub_year = os.path.join(json_files, comp_year)
+    if not os.path.isdir(sub_year) :
+        os.mkdir(sub_year)
+
+    final_sub_path = os.path.join(sub_year, comp_name + '.json')
+    return final_sub_path
+
+
 def main(base_url) :
-    print(get_competition_info(base_url))
+    comp = get_competition_info(base_url)
+    json_path = get_json_path(comp)
+    with open(json_path, 'w') as fout :
+        json.dump(comp.to_json(), fout, indent = 2)
 
 
 if __name__ == '__main__' :

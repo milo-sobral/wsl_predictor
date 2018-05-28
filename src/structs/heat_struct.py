@@ -40,10 +40,19 @@ class Heat :
     # transform a heat object into a dictionary
     def to_json(self) :
 
+        temp_surfers = []
+        for surfer in self.surfers :
+            dict_surfer = {
+                'name' : surfer.name,
+                'waves' : surfer.waves,
+                'total' : surfer.total
+            }
+            temp_surfers.append(dict_surfer)
+
         dict_heat = {
             'round' : self.round,
             'heat' : self.round,
-            'surfers' : self.surfers._asdict()
+            'surfers' : temp_surfers
         }
 
         return dict_heat
