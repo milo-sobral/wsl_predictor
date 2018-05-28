@@ -13,20 +13,26 @@ from heat_struct import Heat, Surfer
 from round_struct import Round
 from comp_struct import Competition
 
+#global variables
+TIME_DELTA = 5
+
 # given a base url for a competition, returns a competition object
 def get_competition_info(base_url) :
 
+    print('\nquerying {}  ...'.format(base_url))
     html = get_html_from_web(base_url)
+    print('DONE\nRetrieving round urls...')
     urls = get_url_list(html)
-
+    print('DONE\n')
     rounds = []
     for url in urls :
-        print('Retrieving info...')
         html = get_html_from_web(url)
+        print('querying {}  ...'.format(url))
         round_temp = get_round_info(html)
+        print('parsing...')
         rounds.append(round_temp)
-        print('round {} done'.format(round_temp.round))
-        time.sleep(5)
+        print('{} DONE'.format(round_temp.round))
+        time.sleep(TIME_DELTA)
 
     name, date, location = get_comp_basic_info(html)
     comp = Competition(name = name, date = date, location = location, rounds = rounds)
@@ -105,12 +111,10 @@ def get_surfer_info(soup) :
         list_waves.append(score)
 
 # TODO : CALCULATE HEAT TOTAL
-    # wave1 = max(list_waves)
-    # list_copy = list_waves.remove(wave1)
-    # wave2 = max(list_copy)
-    total = 5# wave1 + wave2
+    wave1, wave2 = two_largest(list_waves)
+    total = wave1 + wave2
 
-    surfer = Surfer(name = name, waves = list_waves, total=total)
+    surfer = Surfer(name = name, waves = list_waves, total = total)
 
     return surfer
 
@@ -121,12 +125,30 @@ def get_html_from_web(url) :
     return html.text
 
 
-#  Helpe method to parse soup objects
+#  Helper method to parse soup objects
 def match_class(target):
     def do_match(tag):
         classes = tag.get('class', [])
         return all(c in classes for c in target)
     return do_match
+
+
+def two_largest(inlist):
+    """Return the two largest items in the sequence. The sequence must
+    contain at least two items."""
+    largest = 0
+    second_largest = 0
+
+    if len(inlist) < 2 :
+        return 0, 0
+
+    for item in inlist:
+        if item > largest:
+            largest = item
+        elif largest > item > second_largest:
+            second_largest = item
+    # Return the results as a tuple
+    return largest, second_largest
 
 
 #  Returns a list of all urls nedded to visit one competition
@@ -162,11 +184,18 @@ def get_json_path(comp) :
     return final_sub_path
 
 
-def main(base_url) :
-    comp = get_competition_info(base_url)
+#  Write a comp object to a json file
+def write_to_json(comp) :
     json_path = get_json_path(comp)
     with open(json_path, 'w') as fout :
+        print('\ndumping to JSON file at {}'.format(json_path))
         json.dump(comp.to_json(), fout, indent = 2)
+        print('DONE')
+
+
+def main(base_url) :
+    comp = get_competition_info(base_url)
+    write_to_json(comp)
 
 
 if __name__ == '__main__' :

@@ -1,484 +1,485 @@
 {
-  "location": " Gold Coast, Queensland, Australia\n ",
+  "date": "Feb 23 - May 05, 2008",
+  "name": "Quiksilver Pro Gold Coast",
   "rounds": [
     {
       "heats": [
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.33,
                 5.6
               ],
-              "name": "Bobby Martinez"
+              "name": "Bobby Martinez",
+              "total": 12.93
             },
             {
-              "total": 5,
               "waves": [
                 5.5,
                 5.17
               ],
-              "name": "Royden Bryson"
+              "name": "Royden Bryson",
+              "total": 10.67
             },
             {
-              "total": 5,
               "waves": [
                 6.5,
                 3.83
               ],
-              "name": "Jihad Khodr"
+              "name": "Jihad Khodr",
+              "total": 10.33
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.0,
                 6.17
               ],
-              "name": "Dean Morrison"
+              "name": "Dean Morrison",
+              "total": 15.17
             },
             {
-              "total": 5,
               "waves": [
                 7.5,
                 5.5
               ],
-              "name": "Kieren Perrow"
+              "name": "Kieren Perrow",
+              "total": 13.0
             },
             {
-              "total": 5,
               "waves": [
                 4.9,
                 4.2
               ],
-              "name": "Daniel Wills"
+              "name": "Daniel Wills",
+              "total": 9.100000000000001
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.83,
                 6.17
               ],
-              "name": "Bruce Irons"
+              "name": "Bruce Irons",
+              "total": 14.0
             },
             {
-              "total": 5,
               "waves": [
                 6.67,
                 5.17
               ],
-              "name": "Jeremy Flores"
+              "name": "Jeremy Flores",
+              "total": 11.84
             },
             {
-              "total": 5,
               "waves": [
                 4.0,
                 3.63
               ],
-              "name": "Roy Powers"
+              "name": "Roy Powers",
+              "total": 7.63
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.17,
                 7.67
               ],
-              "name": "Heitor Alves"
+              "name": "Heitor Alves",
+              "total": 15.84
             },
             {
-              "total": 5,
               "waves": [
                 8.4,
                 5.0
               ],
-              "name": "Pancho Sullivan"
+              "name": "Pancho Sullivan",
+              "total": 13.4
             },
             {
-              "total": 5,
               "waves": [
                 6.5,
                 3.1
               ],
-              "name": "Ricky Basnett"
+              "name": "Ricky Basnett",
+              "total": 9.6
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.0,
                 5.5
               ],
-              "name": "Mikael Picon"
+              "name": "Mikael Picon",
+              "total": 12.5
             },
             {
-              "total": 5,
               "waves": [
                 7.67,
                 3.83
               ],
-              "name": "Andy Irons"
+              "name": "Andy Irons",
+              "total": 11.5
             },
             {
-              "total": 5,
               "waves": [],
-              "name": "Freddy Patacchia Jr."
+              "name": "Freddy Patacchia Jr.",
+              "total": 0
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.83,
                 8.0
               ],
-              "name": "Bede Durbidge"
+              "name": "Bede Durbidge",
+              "total": 16.83
             },
             {
-              "total": 5,
               "waves": [
                 8.23,
                 6.33
               ],
-              "name": "Leonardo Neves"
+              "name": "Leonardo Neves",
+              "total": 14.56
             },
             {
-              "total": 5,
               "waves": [
                 5.9,
                 4.13
               ],
-              "name": "Daniel Ross"
+              "name": "Daniel Ross",
+              "total": 10.030000000000001
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.77,
                 7.33
               ],
-              "name": "Joel Parkinson"
+              "name": "Joel Parkinson",
+              "total": 15.1
             },
             {
-              "total": 5,
               "waves": [
                 7.67,
                 6.33
               ],
-              "name": "Neco Padaratz"
+              "name": "Neco Padaratz",
+              "total": 14.0
             },
             {
-              "total": 5,
               "waves": [
                 6.97,
                 5.83
               ],
-              "name": "Nic Muscroft"
+              "name": "Nic Muscroft",
+              "total": 12.8
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.67,
                 6.57
               ],
-              "name": "Mick Fanning"
+              "name": "Mick Fanning",
+              "total": 15.24
             },
             {
-              "total": 5,
               "waves": [
                 6.33,
                 4.5
               ],
-              "name": "Mick Campbell"
+              "name": "Mick Campbell",
+              "total": 10.83
             },
             {
-              "total": 5,
               "waves": [
                 4.8,
                 4.6
               ],
-              "name": "Tamaroa McComb"
+              "name": "Tamaroa McComb",
+              "total": 9.399999999999999
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.83,
                 7.67
               ],
-              "name": "Taj Burrow"
+              "name": "Taj Burrow",
+              "total": 16.5
             },
             {
-              "total": 5,
               "waves": [
                 8.93,
                 7.17
               ],
-              "name": "Adrian Buchan"
+              "name": "Adrian Buchan",
+              "total": 16.1
             },
             {
-              "total": 5,
               "waves": [
                 6.17,
                 4.33
               ],
-              "name": "Julian Wilson"
+              "name": "Julian Wilson",
+              "total": 10.5
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.1,
                 7.07
               ],
-              "name": "Kelly Slater"
+              "name": "Kelly Slater",
+              "total": 14.17
             },
             {
-              "total": 5,
               "waves": [
                 7.5,
                 6.1
               ],
-              "name": "Rodrigo Dornelles"
+              "name": "Rodrigo Dornelles",
+              "total": 13.6
             },
             {
-              "total": 5,
               "waves": [
                 7.1,
                 5.37
               ],
-              "name": "Michel Bourez"
+              "name": "Michel Bourez",
+              "total": 12.469999999999999
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.17,
                 6.5
               ],
-              "name": "Adriano de Souza"
+              "name": "Adriano de Souza",
+              "total": 13.67
             },
             {
-              "total": 5,
               "waves": [
                 4.5,
                 4.33
               ],
-              "name": "Ben Bourgeois"
+              "name": "Ben Bourgeois",
+              "total": 8.83
             },
             {
-              "total": 5,
               "waves": [
                 5.23,
                 3.53
               ],
-              "name": "C.J. Hobgood"
+              "name": "C.J. Hobgood",
+              "total": 8.76
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.83,
                 7.0
               ],
-              "name": "Kai Otton"
+              "name": "Kai Otton",
+              "total": 14.83
             },
             {
-              "total": 5,
               "waves": [
                 6.67,
                 6.17
               ],
-              "name": "Travis Logie"
+              "name": "Travis Logie",
+              "total": 12.84
             },
             {
-              "total": 5,
               "waves": [
                 5.2,
                 4.43
               ],
-              "name": "Aritz Aranburu"
+              "name": "Aritz Aranburu",
+              "total": 9.629999999999999
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.0,
                 7.17
               ],
-              "name": "Dayyan Neve"
+              "name": "Dayyan Neve",
+              "total": 16.17
             },
             {
-              "total": 5,
               "waves": [
                 7.0,
                 5.07
               ],
-              "name": "Tom Whitaker"
+              "name": "Tom Whitaker",
+              "total": 12.07
             },
             {
-              "total": 5,
               "waves": [
                 6.33,
                 5.5
               ],
-              "name": "Tiago Pires"
+              "name": "Tiago Pires",
+              "total": 11.83
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.93,
                 6.4
               ],
-              "name": "Taylor Knox"
+              "name": "Taylor Knox",
+              "total": 15.33
             },
             {
-              "total": 5,
               "waves": [
                 6.83,
                 6.73
               ],
-              "name": "Ben Dunn"
+              "name": "Ben Dunn",
+              "total": 13.56
             },
             {
-              "total": 5,
               "waves": [
                 7.5,
                 5.67
               ],
-              "name": "Jay Thompson"
+              "name": "Jay Thompson",
+              "total": 13.17
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.5,
                 8.0
               ],
-              "name": "Luke Munro"
+              "name": "Luke Munro",
+              "total": 17.5
             },
             {
-              "total": 5,
               "waves": [
                 9.0,
                 7.2
               ],
-              "name": "Dane Reynolds"
+              "name": "Dane Reynolds",
+              "total": 16.2
             },
             {
-              "total": 5,
               "waves": [
                 4.83,
                 4.0
               ],
-              "name": "Damien Hobgood"
+              "name": "Damien Hobgood",
+              "total": 8.83
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.73,
                 5.93
               ],
-              "name": "Luke Stedman"
+              "name": "Luke Stedman",
+              "total": 14.66
             },
             {
-              "total": 5,
               "waves": [
                 5.67,
                 5.5
               ],
-              "name": "Tim Reyes"
+              "name": "Tim Reyes",
+              "total": 11.17
             },
             {
-              "total": 5,
               "waves": [
                 8.33,
                 4.83
               ],
-              "name": "Jordy Smith"
+              "name": "Jordy Smith",
+              "total": 13.16
             }
           ],
-          "heat": "Round 1",
-          "round": "Round 1"
+          "round": "Round 1",
+          "heat": "Round 1"
         }
       ],
       "round": "Round 1"
@@ -488,342 +489,342 @@
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.7,
                 6.67
               ],
-              "name": "Andy Irons"
+              "name": "Andy Irons",
+              "total": 16.369999999999997
             },
             {
-              "total": 5,
               "waves": [
                 4.33,
                 1.57
               ],
-              "name": "Tamaroa McComb"
+              "name": "Tamaroa McComb",
+              "total": 5.9
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.17,
                 5.83
               ],
-              "name": "Julian Wilson"
+              "name": "Julian Wilson",
+              "total": 14.0
             },
             {
-              "total": 5,
               "waves": [
                 7.0,
                 6.23
               ],
-              "name": "Pancho Sullivan"
+              "name": "Pancho Sullivan",
+              "total": 13.23
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 6.0,
                 4.83
               ],
-              "name": "Jeremy Flores"
+              "name": "Jeremy Flores",
+              "total": 10.83
             },
             {
-              "total": 5,
               "waves": [
                 4.5,
                 3.5
               ],
-              "name": "Michel Bourez"
+              "name": "Michel Bourez",
+              "total": 8.0
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 6.33,
                 5.83
               ],
-              "name": "C.J. Hobgood"
+              "name": "C.J. Hobgood",
+              "total": 12.16
             },
             {
-              "total": 5,
               "waves": [
                 7.17,
                 4.83
               ],
-              "name": "Nic Muscroft"
+              "name": "Nic Muscroft",
+              "total": 12.0
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 6.83,
                 5.5
               ],
-              "name": "Tom Whitaker"
+              "name": "Tom Whitaker",
+              "total": 12.33
             },
             {
-              "total": 5,
               "waves": [
                 6.0,
                 4.83
               ],
-              "name": "Daniel Ross"
+              "name": "Daniel Ross",
+              "total": 10.83
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.17,
                 6.57
               ],
-              "name": "Roy Powers"
+              "name": "Roy Powers",
+              "total": 13.74
             },
             {
-              "total": 5,
               "waves": [
                 6.17,
                 3.43
               ],
-              "name": "Damien Hobgood"
+              "name": "Damien Hobgood",
+              "total": 9.6
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.67,
                 7.17
               ],
-              "name": "Kieren Perrow"
+              "name": "Kieren Perrow",
+              "total": 14.84
             },
             {
-              "total": 5,
               "waves": [
                 7.33,
                 5.33
               ],
-              "name": "Mick Campbell"
+              "name": "Mick Campbell",
+              "total": 12.66
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.0,
                 8.17
               ],
-              "name": "Adrian Buchan"
+              "name": "Adrian Buchan",
+              "total": 17.17
             },
             {
-              "total": 5,
               "waves": [
                 6.5,
                 6.0
               ],
-              "name": "Jihad Khodr"
+              "name": "Jihad Khodr",
+              "total": 12.5
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 6.17,
                 6.17
               ],
-              "name": "Ben Bourgeois"
+              "name": "Ben Bourgeois",
+              "total": 6.17
             },
             {
-              "total": 5,
               "waves": [
                 6.0,
                 5.7
               ],
-              "name": "Rodrigo Dornelles"
+              "name": "Rodrigo Dornelles",
+              "total": 11.7
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [],
-              "name": "Neco Padaratz"
+              "name": "Neco Padaratz",
+              "total": 0
             },
             {
-              "total": 5,
               "waves": [],
-              "name": "Aritz Aranburu"
+              "name": "Aritz Aranburu",
+              "total": 0
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.0,
                 6.67
               ],
-              "name": "Leonardo Neves"
+              "name": "Leonardo Neves",
+              "total": 13.67
             },
             {
-              "total": 5,
               "waves": [
                 4.33,
                 3.0
               ],
-              "name": "Tiago Pires"
+              "name": "Tiago Pires",
+              "total": 7.33
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [],
-              "name": "Jay Thompson"
+              "name": "Jay Thompson",
+              "total": 0
             },
             {
-              "total": 5,
               "waves": [],
-              "name": "Freddy Patacchia Jr."
+              "name": "Freddy Patacchia Jr.",
+              "total": 0
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.17,
                 7.03
               ],
-              "name": "Dane Reynolds"
+              "name": "Dane Reynolds",
+              "total": 14.2
             },
             {
-              "total": 5,
               "waves": [
                 5.33,
                 4.73
               ],
-              "name": "Ricky Basnett"
+              "name": "Ricky Basnett",
+              "total": 10.06
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.17,
                 7.17
               ],
-              "name": "Jordy Smith"
+              "name": "Jordy Smith",
+              "total": 15.34
             },
             {
-              "total": 5,
               "waves": [
                 6.67,
                 4.83
               ],
-              "name": "Daniel Wills"
+              "name": "Daniel Wills",
+              "total": 11.5
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.33,
                 7.83
               ],
-              "name": "Tim Reyes"
+              "name": "Tim Reyes",
+              "total": 16.16
             },
             {
-              "total": 5,
               "waves": [
                 4.17,
                 1.8
               ],
-              "name": "Royden Bryson"
+              "name": "Royden Bryson",
+              "total": 5.97
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 6.67,
                 5.4
               ],
-              "name": "Ben Dunn"
+              "name": "Ben Dunn",
+              "total": 12.07
             },
             {
-              "total": 5,
               "waves": [
                 4.83,
                 3.67
               ],
-              "name": "Travis Logie"
+              "name": "Travis Logie",
+              "total": 8.5
             }
           ],
-          "heat": "Round 2",
-          "round": "Round 2"
+          "round": "Round 2",
+          "heat": "Round 2"
         }
       ],
       "round": "Round 2"
@@ -833,352 +834,352 @@
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.63,
                 8.0
               ],
-              "name": "Bede Durbidge"
+              "name": "Bede Durbidge",
+              "total": 17.630000000000003
             },
             {
-              "total": 5,
               "waves": [
                 7.17,
                 5.27
               ],
-              "name": "Kieren Perrow"
+              "name": "Kieren Perrow",
+              "total": 12.44
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.0,
                 7.33
               ],
-              "name": "Ben Dunn"
+              "name": "Ben Dunn",
+              "total": 15.33
             },
             {
-              "total": 5,
               "waves": [
                 6.5,
                 4.33
               ],
-              "name": "Tom Whitaker"
+              "name": "Tom Whitaker",
+              "total": 10.83
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 6.33,
                 6.23
               ],
-              "name": "Taylor Knox"
+              "name": "Taylor Knox",
+              "total": 12.56
             },
             {
-              "total": 5,
               "waves": [
                 7.33,
                 5.1
               ],
-              "name": "Dayyan Neve"
+              "name": "Dayyan Neve",
+              "total": 12.43
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.83,
                 8.17
               ],
-              "name": "Joel Parkinson"
+              "name": "Joel Parkinson",
+              "total": 17.0
             },
             {
-              "total": 5,
               "waves": [
                 5.17,
                 3.67
               ],
-              "name": "Roy Powers"
+              "name": "Roy Powers",
+              "total": 8.84
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.1,
                 8.0
               ],
-              "name": "Dean Morrison"
+              "name": "Dean Morrison",
+              "total": 16.1
             },
             {
-              "total": 5,
               "waves": [
                 8.67,
                 4.6
               ],
-              "name": "Dane Reynolds"
+              "name": "Dane Reynolds",
+              "total": 13.27
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.7,
                 9.33
               ],
-              "name": "Jordy Smith"
+              "name": "Jordy Smith",
+              "total": 19.03
             },
             {
-              "total": 5,
               "waves": [
                 8.97,
                 6.77
               ],
-              "name": "Bobby Martinez"
+              "name": "Bobby Martinez",
+              "total": 15.74
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.83,
                 6.17
               ],
-              "name": "Leonardo Neves"
+              "name": "Leonardo Neves",
+              "total": 14.0
             },
             {
-              "total": 5,
               "waves": [
                 5.83,
                 2.83
               ],
-              "name": "Neco Padaratz"
+              "name": "Neco Padaratz",
+              "total": 8.66
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.07,
                 8.5
               ],
-              "name": "Mick Fanning"
+              "name": "Mick Fanning",
+              "total": 17.57
             },
             {
-              "total": 5,
               "waves": [
                 4.0,
                 3.33
               ],
-              "name": "Julian Wilson"
+              "name": "Julian Wilson",
+              "total": 7.33
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.87,
                 9.33
               ],
-              "name": "Taj Burrow"
+              "name": "Taj Burrow",
+              "total": 19.2
             },
             {
-              "total": 5,
               "waves": [
                 4.33,
                 3.33
               ],
-              "name": "Mikael Picon"
+              "name": "Mikael Picon",
+              "total": 7.66
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.5,
                 6.67
               ],
-              "name": "Adrian Buchan"
+              "name": "Adrian Buchan",
+              "total": 14.17
             },
             {
-              "total": 5,
               "waves": [
                 4.17,
                 2.27
               ],
-              "name": "Bruce Irons"
+              "name": "Bruce Irons",
+              "total": 6.4399999999999995
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.33,
                 5.5
               ],
-              "name": "Jeremy Flores"
+              "name": "Jeremy Flores",
+              "total": 12.83
             },
             {
-              "total": 5,
               "waves": [
                 5.23
               ],
-              "name": "Jay Thompson"
+              "name": "Jay Thompson",
+              "total": 0
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.83,
                 7.67
               ],
-              "name": "Tim Reyes"
+              "name": "Tim Reyes",
+              "total": 16.5
             },
             {
-              "total": 5,
               "waves": [
                 6.67,
                 6.33
               ],
-              "name": "C.J. Hobgood"
+              "name": "C.J. Hobgood",
+              "total": 13.0
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.43,
                 8.5
               ],
-              "name": "Kelly Slater"
+              "name": "Kelly Slater",
+              "total": 17.93
             },
             {
-              "total": 5,
               "waves": [
                 7.0,
                 6.83
               ],
-              "name": "Heitor Alves"
+              "name": "Heitor Alves",
+              "total": 13.83
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.0,
                 5.17
               ],
-              "name": "Adriano de Souza"
+              "name": "Adriano de Souza",
+              "total": 13.17
             },
             {
-              "total": 5,
               "waves": [
                 6.5,
                 3.83
               ],
-              "name": "Luke Stedman"
+              "name": "Luke Stedman",
+              "total": 10.33
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.17,
                 8.67
               ],
-              "name": "Andy Irons"
+              "name": "Andy Irons",
+              "total": 17.84
             },
             {
-              "total": 5,
               "waves": [
                 7.0,
                 4.33
               ],
-              "name": "Ben Bourgeois"
+              "name": "Ben Bourgeois",
+              "total": 11.33
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.83,
                 7.5
               ],
-              "name": "Kai Otton"
+              "name": "Kai Otton",
+              "total": 16.33
             },
             {
-              "total": 5,
               "waves": [
                 6.0
               ],
-              "name": "Luke Munro"
+              "name": "Luke Munro",
+              "total": 0
             }
           ],
-          "heat": "Round 3",
-          "round": "Round 3"
+          "round": "Round 3",
+          "heat": "Round 3"
         }
       ],
       "round": "Round 3"
@@ -1188,178 +1189,178 @@
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.0,
                 7.73
               ],
-              "name": "Bede Durbidge"
+              "name": "Bede Durbidge",
+              "total": 15.73
             },
             {
-              "total": 5,
               "waves": [
                 5.17,
                 5.0
               ],
-              "name": "Ben Dunn"
+              "name": "Ben Dunn",
+              "total": 10.17
             }
           ],
-          "heat": "Round 4",
-          "round": "Round 4"
+          "round": "Round 4",
+          "heat": "Round 4"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.0,
                 6.5
               ],
-              "name": "Joel Parkinson"
+              "name": "Joel Parkinson",
+              "total": 14.5
             },
             {
-              "total": 5,
               "waves": [
                 7.17,
                 4.0
               ],
-              "name": "Taylor Knox"
+              "name": "Taylor Knox",
+              "total": 11.17
             }
           ],
-          "heat": "Round 4",
-          "round": "Round 4"
+          "round": "Round 4",
+          "heat": "Round 4"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.83,
                 6.77
               ],
-              "name": "Dean Morrison"
+              "name": "Dean Morrison",
+              "total": 15.6
             },
             {
-              "total": 5,
               "waves": [
                 7.67,
                 6.67
               ],
-              "name": "Jordy Smith"
+              "name": "Jordy Smith",
+              "total": 14.34
             }
           ],
-          "heat": "Round 4",
-          "round": "Round 4"
+          "round": "Round 4",
+          "heat": "Round 4"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.67,
                 6.67
               ],
-              "name": "Mick Fanning"
+              "name": "Mick Fanning",
+              "total": 14.34
             },
             {
-              "total": 5,
               "waves": [
                 5.43,
                 4.67
               ],
-              "name": "Leonardo Neves"
+              "name": "Leonardo Neves",
+              "total": 10.1
             }
           ],
-          "heat": "Round 4",
-          "round": "Round 4"
+          "round": "Round 4",
+          "heat": "Round 4"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.67,
                 7.17
               ],
-              "name": "Adrian Buchan"
+              "name": "Adrian Buchan",
+              "total": 15.84
             },
             {
-              "total": 5,
               "waves": [
                 6.83,
                 5.17
               ],
-              "name": "Taj Burrow"
+              "name": "Taj Burrow",
+              "total": 12.0
             }
           ],
-          "heat": "Round 4",
-          "round": "Round 4"
+          "round": "Round 4",
+          "heat": "Round 4"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.17,
                 7.17
               ],
-              "name": "Jeremy Flores"
+              "name": "Jeremy Flores",
+              "total": 15.34
             },
             {
-              "total": 5,
               "waves": [
                 6.4,
                 4.0
               ],
-              "name": "Tim Reyes"
+              "name": "Tim Reyes",
+              "total": 10.4
             }
           ],
-          "heat": "Round 4",
-          "round": "Round 4"
+          "round": "Round 4",
+          "heat": "Round 4"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.67,
                 8.83
               ],
-              "name": "Kelly Slater"
+              "name": "Kelly Slater",
+              "total": 18.5
             },
             {
-              "total": 5,
               "waves": [
                 9.67,
                 7.83
               ],
-              "name": "Adriano de Souza"
+              "name": "Adriano de Souza",
+              "total": 17.5
             }
           ],
-          "heat": "Round 4",
-          "round": "Round 4"
+          "round": "Round 4",
+          "heat": "Round 4"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.5,
                 7.0
               ],
-              "name": "Andy Irons"
+              "name": "Andy Irons",
+              "total": 15.5
             },
             {
-              "total": 5,
               "waves": [
                 6.0,
                 5.67
               ],
-              "name": "Kai Otton"
+              "name": "Kai Otton",
+              "total": 11.67
             }
           ],
-          "heat": "Round 4",
-          "round": "Round 4"
+          "round": "Round 4",
+          "heat": "Round 4"
         }
       ],
       "round": "Round 4"
@@ -1369,90 +1370,90 @@
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.33,
                 7.33
               ],
-              "name": "Bede Durbidge"
+              "name": "Bede Durbidge",
+              "total": 16.66
             },
             {
-              "total": 5,
               "waves": [
                 8.67,
                 6.67
               ],
-              "name": "Joel Parkinson"
+              "name": "Joel Parkinson",
+              "total": 15.34
             }
           ],
-          "heat": "Quarterfinal",
-          "round": "Quarterfinal"
+          "round": "Quarterfinal",
+          "heat": "Quarterfinal"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 7.67,
                 6.67
               ],
-              "name": "Mick Fanning"
+              "name": "Mick Fanning",
+              "total": 14.34
             },
             {
-              "total": 5,
               "waves": [
                 7.73,
                 5.33
               ],
-              "name": "Dean Morrison"
+              "name": "Dean Morrison",
+              "total": 13.06
             }
           ],
-          "heat": "Quarterfinal",
-          "round": "Quarterfinal"
+          "round": "Quarterfinal",
+          "heat": "Quarterfinal"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.67,
                 7.27
               ],
-              "name": "Jeremy Flores"
+              "name": "Jeremy Flores",
+              "total": 15.94
             },
             {
-              "total": 5,
               "waves": [
                 7.33,
                 3.83
               ],
-              "name": "Adrian Buchan"
+              "name": "Adrian Buchan",
+              "total": 11.16
             }
           ],
-          "heat": "Quarterfinal",
-          "round": "Quarterfinal"
+          "round": "Quarterfinal",
+          "heat": "Quarterfinal"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 8.67,
                 8.33
               ],
-              "name": "Kelly Slater"
+              "name": "Kelly Slater",
+              "total": 17.0
             },
             {
-              "total": 5,
               "waves": [
                 6.27,
                 4.67
               ],
-              "name": "Andy Irons"
+              "name": "Andy Irons",
+              "total": 10.94
             }
           ],
-          "heat": "Quarterfinal",
-          "round": "Quarterfinal"
+          "round": "Quarterfinal",
+          "heat": "Quarterfinal"
         }
       ],
       "round": "Quarterfinal"
@@ -1462,46 +1463,46 @@
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.0,
                 8.23
               ],
-              "name": "Mick Fanning"
+              "name": "Mick Fanning",
+              "total": 17.23
             },
             {
-              "total": 5,
               "waves": [
                 8.5,
                 8.17
               ],
-              "name": "Bede Durbidge"
+              "name": "Bede Durbidge",
+              "total": 16.67
             }
           ],
-          "heat": "Semifinal",
-          "round": "Semifinal"
+          "round": "Semifinal",
+          "heat": "Semifinal"
         },
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.8,
                 5.67
               ],
-              "name": "Kelly Slater"
+              "name": "Kelly Slater",
+              "total": 15.47
             },
             {
-              "total": 5,
               "waves": [
                 7.67,
                 7.5
               ],
-              "name": "Jeremy Flores"
+              "name": "Jeremy Flores",
+              "total": 15.17
             }
           ],
-          "heat": "Semifinal",
-          "round": "Semifinal"
+          "round": "Semifinal",
+          "heat": "Semifinal"
         }
       ],
       "round": "Semifinal"
@@ -1511,29 +1512,28 @@
         {
           "surfers": [
             {
-              "total": 5,
               "waves": [
                 9.27,
                 8.67
               ],
-              "name": "Kelly Slater"
+              "name": "Kelly Slater",
+              "total": 17.939999999999998
             },
             {
-              "total": 5,
               "waves": [
                 9.33,
                 5.9
               ],
-              "name": "Mick Fanning"
+              "name": "Mick Fanning",
+              "total": 15.23
             }
           ],
-          "heat": "Final",
-          "round": "Final"
+          "round": "Final",
+          "heat": "Final"
         }
       ],
       "round": "Final"
     }
   ],
-  "date": "Feb 23 - May 05, 2008",
-  "name": "Quiksilver Pro Gold Coast"
+  "location": " Gold Coast, Queensland, Australia\n "
 }
