@@ -1,9 +1,32 @@
 # scraping the worldsurfleague.com website to gather data
 import requests
 import bs4
+
+path_to_structs = os.path.join(os.path.dirname(os.path.abspath(__file__), 'structs')
+sys.path.insert(0, path_to_structs)
+
 from heat_struct import Heat, Surfer
 from round_struct import Round
 from comp_struct import Competition
+
+# given a base url for a competition, returns a competition object
+def get_competition_info(base_url) :
+
+    html = get_html_from_web(base_url)
+    urls = get_url_list(html)
+
+    print(urls)
+
+    # rounds = []
+    # for url in urls :
+    #     rounds.append(get_round_info(url))
+    #
+    #
+    #
+    # comp = Competition(name = )
+    #
+    # return comp
+
 
 # takes an html pages, parses the info about the round, gives back a Round object
 def get_round_info(html) :
@@ -90,20 +113,6 @@ def get_url_list(html) :
         final_list.append(url_base + l)
 
     return final_list
-
-
-def get_competition_info(base_url) :
-    # find list of urls with base url
-    # Get a round object for each url and add it to a competition object
-
-    html = get_html_from_web(base_url)
-    urls = get_url_list(html)
-
-
-
-    comp = Competition(name = )
-
-    return data
 
 
 def main(base_url) :

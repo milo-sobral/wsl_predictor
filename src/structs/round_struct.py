@@ -1,5 +1,10 @@
 # will hold a round's information
 import collections
+import sys
+import os
+path_to_program = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, path_to_program)
+from heat_struct import Heat, Surfer
 
 class Round :
 
