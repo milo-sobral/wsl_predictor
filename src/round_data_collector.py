@@ -100,17 +100,15 @@ def get_surfer_info(soup) :
 
     name = soup_surfer.find(class_ = 'avatar-text-primary').get_text()
     list_waves = []
-    # print(soup_surfer)
     waves_soup_temp = soup_wave.find_all('span', {'class' : 'wave'})
 
     for w in waves_soup_temp :
         try :
             score = float(w.find(class_ = 'score').get_text())
-        except Exception :
+        except AttributeError :
             continue
         list_waves.append(score)
 
-# TODO : CALCULATE HEAT TOTAL
     wave1, wave2 = two_largest(list_waves)
     total = wave1 + wave2
 
