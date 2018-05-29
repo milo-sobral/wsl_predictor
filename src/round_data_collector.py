@@ -121,7 +121,11 @@ def get_surfer_info(soup) :
 
 # get html info from web
 def get_html_from_web(url) :
-    html = requests.get(url)
+    try :
+        html = requests.get(url)
+    except requests.exceptions.ConnectionError :
+        print('Network is down. Cannot connect to host.\n')
+        exit(1)
     return html.text
 
 

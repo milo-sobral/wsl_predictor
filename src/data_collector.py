@@ -11,7 +11,14 @@ from comp_struct import Competition
 
 
 def main() :
-    dataset_path = input('Where do you want to save your files?\n')
+    bad_answer = True
+    while bad_answer :
+        dataset_path = input('Where do you want to save your files? ([enter] for default location)\n')
+        if not os.path.isdir(dataset_path) and dataset_path:
+            print('Folder {} not found'.format(dataset_path))
+        else :
+            bad_answer = False
+
     list_year_urls = get_urls_years()
     for year_url in list_year_urls :
         print('\nyear : ' + year_url + '\n')
@@ -24,9 +31,24 @@ def main() :
 
 def get_urls_years() :
     url_list = []
-    start_year = input('What year do you want your dataset to begin with ? [2008-2017]  ')
-    end_year = input('What year do you want your dataset to end with ? [2008-2017]  ')
-    for i in range(int(start_year), int(end_year)+1) :
+    start_year = ''
+    end_year = ''
+    bad_answer = True
+    while bad_answer :
+        try :
+            start_year = int(input('What year do you want your dataset to begin with ? [2008-2017]  ').strip())
+            end_year = int(input('What year do you want your dataset to end with ? [2008-2017]  ').strip())
+        except ValueError :
+            print('Enter years as valid integers')
+
+        if not 2008 <= start_year <= 2017 or not 2008 <= end_year <= 2017:
+            print('No info for provided years')
+        elif start_year > end_year or not start_year or not end_year:
+            print('please enter a working range and both limits')
+        else :
+            bad_answer = False
+
+    for i in range(start_year, end_year+1) :
         url_list.append('http://www.worldsurfleague.com/events/{}/mct'.format(i))
     return url_list
 
@@ -44,7 +66,6 @@ def parse_from_url(url) :
     html = rdc.get_html_from_web(url)
     soup = bs.BeautifulSoup(html, 'lxml')
     return soup
-
 
 
 if __name__ == '__main__' :
