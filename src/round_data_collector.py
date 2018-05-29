@@ -105,7 +105,7 @@ def get_surfer_info(soup) :
     for w in waves_soup_temp :
         try :
             score = float(w.find(class_ = 'score').get_text())
-        except AttributeError :
+        except ValueError :
             continue
         list_waves.append(score)
 
