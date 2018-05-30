@@ -45,6 +45,20 @@ class Competition :
 
         return dict_comp
 
+
+    def get_surfers(self) :
+        surfer_list = []
+        for round in self.rounds :
+            if round.round == 'Round 1' :
+                for heat in round.heats :
+                    for surfer in heat.surfers :
+                        surfer_list.append(surfer.name)
+        surfer_set = set(surfer_list)
+        return surfer_set
+
+
+
+
     @staticmethod
     def from_json(comp_dict) :
         comp_object = Competition(

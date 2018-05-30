@@ -3,6 +3,7 @@ import os
 import collections
 import json
 import sys
+import data_srv as srv
 path_to_structs = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'structs')
 sys.path.insert(0, path_to_structs)
 from heat_struct import Heat, Surfer
@@ -83,6 +84,8 @@ def load_database(filename) :
 def main() :
     filename = get_data_location()
     dataset = load_database(filename)
+    for surfer in srv.get_surfers_list(dataset[2017]) :
+        print(surfer)
 
 
 if __name__ == '__main__' :
