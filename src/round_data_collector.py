@@ -208,5 +208,5 @@ def main(base_url) :
 
 
 if __name__ == '__main__' :
-    url = input('url : ')
+    url = raw_input('url : ')
     main(url)

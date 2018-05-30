@@ -43,3 +43,14 @@ class Round :
         }
 
         return dict_round
+
+    @staticmethod
+    def from_json(round_dict) :
+        round_object = Round(
+            round = round_dict['round'],
+            heats = [
+                Heat.from_json(heat)
+                for heat in round_dict['heats']
+            ]
+        )
+        return round_object

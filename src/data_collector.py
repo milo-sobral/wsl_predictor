@@ -13,7 +13,7 @@ from comp_struct import Competition
 def main() :
     bad_answer = True
     while bad_answer :
-        dataset_path = input('Where do you want to save your files? ([enter] for default location)\n')
+        dataset_path = raw_input('Where do you want to save your files? ([enter] for default)\n')
         if not os.path.isdir(dataset_path) and dataset_path:
             print('Folder {} not found'.format(dataset_path))
         else :
@@ -36,8 +36,8 @@ def get_urls_years() :
     bad_answer = True
     while bad_answer :
         try :
-            start_year = int(input('What year do you want your dataset to begin with ? [2008-2017]  ').strip())
-            end_year = int(input('What year do you want your dataset to end with ? [2008-2017]  ').strip())
+            start_year = int(raw_input('What year do you want your dataset to begin with ? [2008-2017]  ').strip())
+            end_year = int(raw_input('What year do you want your dataset to end with ? [2008-2017]  ').strip())
         except ValueError :
             print('Enter years as valid integers')
 

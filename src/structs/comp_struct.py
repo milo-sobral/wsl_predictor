@@ -23,7 +23,6 @@ class Competition :
 
 
     def to_json(self) :
-
         jsonized_rounds = [
             round.to_json()
             for round in self.rounds
@@ -37,3 +36,16 @@ class Competition :
         }
 
         return dict_comp
+
+    @staticmethod
+    def from_json(comp_dict) :
+        comp_object = Competition(
+            name = comp_dict['name'],
+            date = comp_dict['date'],
+            location = comp_dict['location'],
+            rounds = [
+                Round.from_json(round)
+                for round in comp_dict['rounds']
+            ]
+        )
+        return comp_object

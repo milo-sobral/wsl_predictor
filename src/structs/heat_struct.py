@@ -55,3 +55,15 @@ class Heat :
         }
 
         return dict_heat
+
+    @staticmethod
+    def from_json(heat_dict) :
+        heat_object = Heat(
+            round = heat_dict['round'],
+            heat = heat_dict['heat'],
+            surfers = [
+                Surfer(name = surfer.name, waves = surfer.waves, total = surfer.total)
+                for surfer in heat_dict['surfers']
+            ]
+        )
+        return heat_object
