@@ -3,6 +3,7 @@ import datetime
 import json
 import sys
 import os
+# import codecs
 path_to_program = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, path_to_program)
 from heat_struct import Heat, Surfer
@@ -16,7 +17,7 @@ class Competition :
     def __init__(self, name, date, location, rounds):
         self.name = name
         self.date = date
-        self.location = location
+        self.location = location.encode('ascii', 'ignore')
         self.rounds = rounds
 
 

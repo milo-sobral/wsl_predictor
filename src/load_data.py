@@ -10,9 +10,6 @@ from round_struct import Round
 from comp_struct import Competition
 
 
-Year = collections.namedtuple('Year', 'year, competitions')
-
-
 # inputs the user for the path to the dataset
 def get_data_location() :
     bad_answer = True
@@ -49,6 +46,8 @@ def get_comps_year(filename) :
         with open(file) as fin :
             comp_data = json.load(fin)
             comp_object = Competition.from_json(comp_data)
+            list_comps.append(comp_object)
+    return list_comps
 
 
 # takes the path to the database root and returns a list of Year named tuples
@@ -68,7 +67,7 @@ def load_database(filename) :
 
     subdirs = [x[0] for x in os.walk(filename)]
 
-    list_years = []
+    dict_dataset = {}
     for dir_year in subdirs :
         # print(type(s), )
         try :
@@ -77,13 +76,13 @@ def load_database(filename) :
             continue
         if start_year <= int_year <= end_year :
             list_comps = get_comps_year(os.path.abspath(dir_year))
-            current_year = Year(year = int_year, competitions = list_comps)
-            list_years.append(current_year)
+            dict_dataset[int_year] = list_comps
+    return dict_dataset
 
 
 def main() :
     filename = get_data_location()
-    load_database(filename)
+    dataset = load_database(filename)
 
 
 if __name__ == '__main__' :
