@@ -47,16 +47,14 @@ class Competition :
 
 
     def get_surfers(self) :
-        surfer_list = []
+        surfer_set = []
         for round in self.rounds :
             if round.round == 'Round 1' :
-                for heat in round.heats :
-                    for surfer in heat.surfers :
-                        surfer_list.append(surfer.name)
-        surfer_set = set(surfer_list)
+                surfer_set.append(
+                    surfer
+                    for surfer in round.get_surfers()
+                )
         return surfer_set
-
-
 
 
     @staticmethod

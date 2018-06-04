@@ -11,13 +11,19 @@ from comp_struct import Competition
 History = collections.namedtuple('History', 'comp, nb_years, standings, lost_against')
 
 
-def get_surfers_list(year) :
-    surfer_list = set()
-    for comp in year :
-        surfers = comp.get_surfers()
-        surfer_list.add(surfer for surfer in comp.get_surfers())
+def get_surfers_list(year, data) :
 
-    return surfers
+    yearly_data = data[year]
+
+    surfer_list = []
+    for comp in yearly_data :
+        surfers = comp.get_surfers()
+        surfer_list.append(
+            surfer
+            for surfer in surfers
+        )
+    surfer_set = set(surfer_list)
+    return surfer_set
 
 
 def get_surfer_results(year, year_end = 0) :

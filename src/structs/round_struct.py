@@ -44,6 +44,17 @@ class Round :
 
         return dict_round
 
+
+    def get_surfers(self) :
+        list = []
+        for heat in self.heats :
+            list.append(
+                surfer
+                for surfer in heat.get_surfers_set()
+            )
+        return list
+
+
     @staticmethod
     def from_json(round_dict) :
         round_object = Round(

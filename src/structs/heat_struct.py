@@ -37,6 +37,13 @@ class Heat :
         return max
 
 
+    def get_surfers_set(self) :
+        list = []
+        for surfer in self.surfers :
+            list.append(surfer.name)
+        return list
+
+
     # transform a heat object into a dictionary
     def to_json(self) :
         temp_surfers = []

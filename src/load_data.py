@@ -15,7 +15,7 @@ from comp_struct import Competition
 def get_data_location() :
     bad_answer = True
     while bad_answer :
-        dataset_path = raw_input('Enter the path to the database [empty for default]:\n')
+        dataset_path = input('Enter the path to the database [empty for default]:\n')
         if dataset_path == '' :
             current_path = os.path.dirname(os.path.abspath(__file__))
             temp = os.path.join(os.path.split(os.path.split(current_path)[0])[0],'wsl_predictor_bin')
@@ -54,8 +54,8 @@ def get_comps_year(filename) :
 # takes the path to the database root and returns a list of Year named tuples
 def load_database(filename) :
     try :
-        start_year = int(raw_input('What years do you want to load from dataset (initial) ? [2008-2017]  ').strip())
-        end_year = int(raw_input('What years do you want to load from dataset (final) ? [2008-2017]  ').strip())
+        start_year = int(input('What years do you want to load from dataset (initial) ? [2008-2017]  ').strip())
+        end_year = int(input('What years do you want to load from dataset (final) ? [2008-2017]  ').strip())
     except ValueError :
         print('Enter years as valid integers')
 
@@ -65,6 +65,7 @@ def load_database(filename) :
         print('please enter a working range and both limits')
     else :
         bad_answer = False
+
 
     subdirs = [x[0] for x in os.walk(filename)]
 
@@ -84,8 +85,8 @@ def load_database(filename) :
 def main() :
     filename = get_data_location()
     dataset = load_database(filename)
-    for surfer in srv.get_surfers_list(dataset[2017]) :
-        print(surfer)
+    set = list(srv.get_surfers_list(2017, dataset))
+    print (set)
 
 
 if __name__ == '__main__' :
